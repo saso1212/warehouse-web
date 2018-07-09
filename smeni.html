@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Smeni</title>
+</head>
+<body>
+    <div class="container">
+<div class="left-box">
+    <div class="logincount">
+        <div class="logo" style="float: left;">
+            <img src="img/th3.jpg" alt="logo" style="height: 20px; width: 20px; margin: 7px;">
+        </div>
+        <div class="loginUser" id="loginUser" style="float: right;">Saso Davidovik</div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="navig">
+            <nav class="navigation">
+                <ul class="mainmenu">
+                    <li class="online" ><a href="index.html">Online</a></li>
+                    <li>
+                        <a href="malfunction.html">Prijavi defekt</a>
+                    </li>
+                    <li> <a href="orders.html" >Nalozi</a></li>
+                    <li>
+                       
+                        <a href="oddelenija.html">Oddelenija</a> 
+                         <ul class="submenu">
+                             <li>
+                                 <a href="novi_oddelenija">Novo Oddelenie</a>
+                             </li>
+                         </ul>
+                     </li>
+                    <li>
+                       
+                       <a href="linija.html">Linija/Masina</a> 
+                        <ul class="submenu">
+                            <li>
+                                <a href="linija_masina.html">NovaLinija/Masina</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                       
+                        <a href="users.html">Korisnici</a> 
+                         <ul class="submenu">
+                             <li>
+                                 <a href="userlog.html">Nov Korisnik</a>
+                             </li>
+                         </ul>
+                     </li>
+                     <li>
+                        <a href="smeni.html" class="active">Smeni</a>
+                    </li>
+                  
+                    <li><a href="vnesi_rezervendel.html">Vnesi Rezerven del</a></li>
+                    <li><a href="magacin_pregled.html">Magacin Pregled</a></li>
+                    <li><a href="">Log Book</a></li>
+                    <li><a href="">Izvestai</a></li>
+                    <li><a href="">Audit Trail</a></li>
+                    <li><a href="">Dokumenti</a></li>
+
+                </ul>
+            </nav>
+        </div>
+</div>
+<div class="right-box">
+    <div class="navigtop">
+        <button id="logout" onclick="window.location.replace('login.html');">Logout</button>
+    </div>
+  <div class="smeni-box" id="smeniID">
+  </div>
+  <div class="smeni-status">
+      
+      <div class="legend" style="background-color: #5e6292;"></div>
+      <div class="leglab">Sloboden</span>
+        <div style="clear: both"></div>
+        <div class="legend" style="background-color: #eb3434;"></div>
+      <div class="leglab">Zafaten</span>
+        <div style="clear: both"></div>
+        <div class="legend" style="background-color: #a76b6b;"></div>
+      <div class="leglab">Otsuten</span>
+        <div style="clear: both"></div>
+        <p class="oddelenie_masina1" style="margin-top:10px; ">
+            <label for="oddelenie_masina">Oddelenie:</label> 
+            <select name="oddelenie_masina" id="oddelenie_masina" class="tb2" required>
+            </select>
+            <div style="clear: both"></div>
+    </p>
+    <p style="margin: 10px 0 0 20px;">
+        Poderedi po:
+        <br>
+        <input type="radio" name="group1" id="ord0" value="0" checked >
+        Ime
+        <br>
+        <input type="radio" name="group1" id="ord1" value="1" >
+        Prezime
+        <br>
+        <input type="radio" name="group1" id="ord2" value="2" >
+        Rabotno mesto
+        <br>
+    </p>
+    <div style="clear: both"></div>
+    <p style="margin: 15px 0 0 20px;">
+        Sledna promenan na smeni vo: 
+        <br>
+        <div  id="promeni_smena" style="margin:5px 0 0 20px; ">
+            <!-- 22:00 h -->
+        </div>
+        
+        <br>
+        <input type="button" value="Reset" id="resetSmeni" onclick="Refresh()">
+    </p>
+
+  </div>
+</div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/script_smeni.js"></script>
+    <script src="js/scrip_table_dept.js"></script>
+</body>
+</html>

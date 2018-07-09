@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Malfunction</title>
+</head>
+<body>
+    <div class="container">
+<div class="left-box">
+    <div class="logincount">
+        <div class="logo" style="float: left;">
+            <img src="img/th3.jpg" alt="logo" style="height: 20px; width: 20px; margin: 7px;">
+        </div>
+        <div class="loginUser" id="loginUser" style="float: right;">Saso Davidovik</div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="navig">
+            <nav class="navigation">
+                <ul class="mainmenu">
+                    <li class="online" ><a href="index.html" >Online</a></li>
+                    <li>
+                        <a href="malfunction.html" class="active">Prijavi defekt</a>
+                    </li>
+                    <li> <a href="orders.html" >Nalozi</a></li>
+                    <li>
+                       
+                        <a href="oddelenija.html">Oddelenija</a> 
+                         <ul class="submenu">
+                             <li>
+                                 <a href="novi_oddelenija.html">Novo Oddelenie</a>
+                             </li>
+                         </ul>
+                     </li>
+                    <li>
+                       
+                       <a href="linija.html">Linija/Masina</a> 
+                        <ul class="submenu">
+                            <li>
+                                <a href="linija_masina.html" >NovaLinija/Masina</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                       
+                        <a href="users.html">Korisnici</a> 
+                         <ul class="submenu">
+                             <li>
+                                 <a href="userlog.html">Nov Korisnik</a>
+                             </li>
+                         </ul>
+                     </li>
+                     <li>
+                        <a href="smeni.html">Smeni</a>
+                    </li>
+                 
+                    <li><a href="vnesi_rezervendel.html">Vnesi Rezerven del</a></li>
+                    <li><a href="magacin_pregled.html">Magacin Pregled</a></li>
+                    <li><a href="">Log Book</a></li>
+                    <li><a href="">Izvestai</a></li>
+                    <li><a href="">Audit Trail</a></li>
+                    <li><a href="">Dokumenti</a></li>
+
+                </ul>
+            </nav>
+        </div>
+</div>
+<div class="right-box">
+    <div class="navigtop">
+        <button id="logout" onclick="window.location.replace('login.html');">Logout</button>
+    </div>
+  <div class="report-manifacture_box">
+        <form action="" name="form1" id="form1">
+    <div class="report-manifacture">
+        <div class="header_report">New Order</div>
+        <div class="mainfacture_form">
+         
+                <p class="prioritet">
+                   <label for="prioritet">Prioritetno:</label>
+                      <input type="checkbox" form="form1" name="prioritet" id="prioritet" value="&radic;">
+                </p>
+                   <p class="agent">
+                   <label for="agent">Po nalog Na:</label>
+                   <input type="text" form="form1" name="agent" id="agent" value="Saso Davidovik" disabled="disabled">
+                   </p>
+                   <p class="oddelenie_masina">
+                    <label for="oddelenie_masina">Oddelenie:</label> 
+                    <select name="oddelenie_masina" id="oddelenie_masina" class="oddelenie" form="form1" class="tb2" required>
+                            <!-- <option value="1">Opsto</option>
+                            <option value="2">Elekto Oddrzuvanje</option>
+                            <option value="3">Masinsko Odrzuvanje</option>
+                            <option value="4">HVAC</option>
+                            <option value="5">Kalibracii</option> -->
+                    </select>
+            </p>
+            <p class="linija_masina" style="display:none">
+                <label for="linija_masina">Linija/Masina</label> 
+                <select name="linija_masina" id="linija_masina"  form="form1" class="tb2">
+                </select>
+            </p>
+                   <p class="opstaIntervencija">
+                   <label for="opstaIntervencija">Opsta Intervencija:</label>
+                    <input type="checkbox" form="form1" name="opstaIntervencija" id="opstaIntervencija" value="&radic;">
+                    </p>
+                    <p class="remontnaIntervencija">
+                     <label for="remontnaIntervencija">Remontna Intervencija:</label>
+                   <input type="checkbox" form="form1" name="remontnaIntervencija" id="remontnaIntervencija" value="&radic;">
+                    </p>
+                    <p>
+                           <label for="zabeleska">Opis na problemot:</label>
+                         <textarea name="zabelseka" id="zbeleska" cols="60" rows="4" form="form1" required></textarea>
+                          </p>
+                        <!-- &radic; -->
+                  
+         </div>
+    </div>
+    <input type="submit" id="submit_order" value="Create Order">
+</form>
+  </div>
+</div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> -->
+    <script src="js/scrip_table_dept.js"></script>
+    <script src="js/enter_spare_parth.js"></script>
+</body>
+</html>

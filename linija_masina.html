@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Linija_Masina</title>
+</head>
+<body>
+    <div class="container">
+<div class="left-box">
+    <div class="logincount">
+        <div class="logo" style="float: left;">
+            <img src="img/th3.jpg" alt="logo" style="height: 20px; width: 20px; margin: 7px;">
+        </div>
+        <div class="loginUser" id="loginUser" style="float: right;">Saso Davidovik</div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="navig">
+            <nav class="navigation">
+                <ul class="mainmenu">
+                    <li class="online" ><a href="index.html" >Online</a></li>
+                    <li>
+                        <a href="malfunction.html">Prijavi defekt</a>
+                    </li>
+                    <li> <a href="orders.html" >Nalozi</a></li>
+                    <li>
+                       
+                        <a href="oddelenija.html">Oddelenija</a> 
+                         <ul class="submenu">
+                             <li>
+                                 <a href="novi_oddelenija.html">Novo Oddelenie</a>
+                             </li>
+                         </ul>
+                     </li>
+                    <li>
+                       
+                       <a href="linija.html">Linija/Masina</a> 
+                        <ul class="active-block">
+                            <li>
+                                <a href="linija_masina.html" class="active">NovaLinija/Masina</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                       
+                        <a href="users.html">Korisnici</a> 
+                         <ul class="submenu">
+                             <li>
+                                 <a href="userlog.html">Nov Korisnik</a>
+                             </li>
+                         </ul>
+                     </li>
+                     <li>
+                        <a href="smeni.html">Smeni</a>
+                    </li>
+                  
+                    <li><a href="vnesi_rezervendel.html">Vnesi Rezerven del</a></li>
+                    <li><a href="magacin_pregled.html">Magacin Pregled</a></li>
+                    <li><a href="">Log Book</a></li>
+                    <li><a href="">Izvestai</a></li>
+                    <li><a href="">Audit Trail</a></li>
+                    <li><a href="">Dokumenti</a></li>
+
+                </ul>
+            </nav>
+        </div>
+</div>
+<div class="right-box">
+    <div class="navigtop">
+        <button id="logout">Logout</button>
+    </div>
+  <div class="nova-linija_box">
+        <form action=""  id="form2" name="form2">
+            <div class="report-manifacture masina_linija">
+                <div class="header_report">Vnesi Nova Masina</div>
+                <div class="masina_form">
+                           <p class="id">
+                           <label for="id_machine">ID</label>
+                           <input type="text" form="form2" name="agent" id="id_machine" value="1"  disabled >
+                            </p> 
+                            <p class="oddelenie_masina">
+                                <label for="oddelenie_masina">Oddelenie:</label> 
+                                <select name="oddelenie_masina" id="oddelenie_masina"   form="form2" class="tb2">
+                                    
+                                </select>
+                          </p>
+                            <p class="proizvoitel">
+                            <label for="proizvoitel">Proizvoditel</label>
+                            <input type="text" form="form2" name="agent" id="proizvoitel"  >
+                            </p> 
+                            <p class="model">
+                            <label for="model">Model</label>
+                            <input type="text" form="form2" name="agent" id="model" >
+                            </p> 
+                            <p class="opis">
+                            <label for="opis">Opis</label>
+                            <input type="text" form="form2" name="agent" id="opis"  >
+                            </p> 
+                            <p class="s_no">
+                            <label for="s_no">Seriski broj</label>
+                            <input type="text" form="form2" name="agent" id="s_no"  >
+                            </p> 
+                    
+                        <p>
+                            <label for="docum" class="filed">Nov Dokument</label>
+                            <input type="file" class="tb250" id="docum" name="docum">
+                        </p>
+                        <p>
+                            <label for="slika" class="filed">Slika</label>
+                            <input type="file" class="tb250" id="slika" name="slika">
+                        </p>
+                        <input type="submit" id="submit_new_machine" value="Send">
+                 </div>
+            </div>
+        </form>
+  </div>
+</div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> -->
+    <!-- <script src="js/script.js"></script> -->
+    <script src="js/scrip_table_dept.js"></script>
+    <script src="js/new_machine.js"></script>
+</body>
+</html>

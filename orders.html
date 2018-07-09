@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/department.css">
+    <title>Orders</title>
+</head>
+<body>
+    <div class="container">
+<div class="left-box">
+    <div class="logincount">
+        <div class="logo" style="float: left;">
+            <img src="img/th3.jpg" alt="logo" style="height: 20px; width: 20px; margin: 7px;">
+        </div>
+        <div class="loginUser" id="loginUser" style="float: right;">Saso Davidovik</div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="navig">
+            <nav class="navigation">
+                <ul class="mainmenu">
+                    <li class="online" ><a href="index.html" >Online</a></li>
+                    <li>
+                        <a href="malfunction.html">Prijavi defekt</a>
+                    </li>
+                    <li> <a href="orders.html" class="active">Nalozi</a></li>
+                    <li>
+                       
+                        <a href="oddelenija.html">Oddelenija</a> 
+                         <ul class="submenu">
+                             <li>
+                                 <a href="novi_oddelenija.html">Novo Oddelenie</a>
+                             </li>
+                         </ul>
+                     </li>
+                    <li>
+                       
+                       <a href="linija.html" >Linija/Masina</a> 
+                        <ul >
+                            <li>
+                                <a href="linija_masina.html" >NovaLinija/Masina</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                       
+                        <a href="users.html">Korisnici</a> 
+                         <ul class="submenu">
+                             <li>
+                                 <a href="userlog.html">Nov Korisnik</a>
+                             </li>
+                         </ul>
+                     </li>
+                     <li>
+                        <a href="smeni.html">Smeni</a>
+                    </li>
+                  
+                    <li><a href="vnesi_rezervendel.html">Vnesi Rezerven del</a></li>
+                    <li><a href="magacin_pregled.html" >Magacin Pregled</a></li>
+                    <li><a href="">Log Book</a></li>
+                    <li><a href="">Izvestai</a></li>
+                    <li><a href="">Audit Trail</a></li>
+                    <li><a href="">Dokumenti</a></li>
+
+                </ul>
+            </nav>
+        </div>
+</div>
+<div class="right-box">
+    <div class="navigtop">
+        <button id="logout" onclick="window.location.replace('login.html');">Logout</button>
+    </div>
+    <div class="table_department">
+        <table border="1" style=" border-collapse: collapse;" class="table_dept table_department_magacin" >
+            <thead id="thead">
+                <tr>
+                   <td class="orderNo">No.</td>
+                   <td class="timeStart">Vreme otv.</td>
+                   <td class="sAgent">Servis agent</td>
+                   <td class="serviser">Serviser</td>
+                   <td class="dept">Oddelenie</td>
+                   <td class="line">Linija/Masina</td>
+                   <td class="mark">O.I</td>
+                   <td class="min_value">Mo.</td>
+                   <td class="timeEnd">Vreme zat.</td>
+                   <td class="orderStatus">Status</td>
+                   <td class="th_edit">Edit</td>
+                   <td class="th_edit">Del.</td>
+                </tr>
+            </thead>
+            <tbody id="tbody_line">
+              
+            </tbody>
+        </table>
+        <div class="kocki">
+            <div class="pagination">
+        </div>
+        </div>
+    </div>
+</div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/orders_script.js"></script>
+</body>
+</html>

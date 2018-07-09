@@ -1,0 +1,218 @@
+/* .right-box{
+    overflow: auto;
+} */
+.right-box .table_department{
+margin: 50px auto;
+width: 90%;
+border-color: #1b5480;
+}
+.table_department #thead{
+background-color: #287bbc;
+border-color: #1b5480;
+text-shadow: 0 1px 1px rgba(0,0,0,0.35);
+color: azure;
+font-weight: bold;
+font-size: 16px;
+
+}
+.table_dept #thead tr td{
+    padding: 5px;
+    text-align: center;
+}
+.table_dept .th_odd{
+    width: 50%;
+}
+.table_dept .th_production{
+width: 25%;
+}
+.table_dept .th_model{
+width: 20%;
+}
+.table_dept .th_opis{
+ width: 20%;
+ }
+.table_dept .th_s_number{
+ width: 13%;  
+}
+.table_dept .th_oddeenie{
+ width: 30%; 
+}
+.table_dept .th_description{
+    width: 50%;
+}
+.table_dept .th_edit{
+    width: 5%;
+}
+.table_dept #tbody tr:nth-child(even) {background: #CCC}
+
+.table_dept #tbody tr:nth-child(odd) {background: #FFF}
+
+.table_dept #tbody tr td{
+   padding: 1px;
+    text-align: center;
+}
+.table_dept #tbody_line tr:nth-child(even) {background: #CCC}
+
+.table_dept #tbody_line tr:nth-child(odd) {background: #FFF}
+
+.table_dept #tbody_line tr td{
+   padding: 1px;
+    text-align: center;
+}
+.btn_department{
+    padding: 4px 8px;
+    background: linear-gradient(rgba(29, 10, 82, 0.877), rgb(180, 154, 228));
+   border: rgb(186, 181, 204);
+   text-shadow: 0 1px 1px rgba(0,0,0,0.35);
+   color: azure;
+   font-weight: bold;
+   border-radius: 3px;
+}
+.btn_department:hover{
+    cursor: pointer;
+    background: linear-gradient(rgb(180, 154, 228), rgb(29, 10, 82));
+}
+.text-centered{
+    width: 95%;
+    text-align: center;
+}
+  .kocki {
+    display: flex;
+    text-align: center;
+    overflow: hidden;
+    position: absolute;
+    top:620px;
+    left:850px;
+}
+.kocki .pagination{
+    margin:  30px auto;
+    display: flex;
+}
+
+.pagination .page-item{
+    text-decoration: none;
+    margin: 0px 5px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid rgb(10, 1, 15);
+    background: rgb(160, 154, 175);
+    text-align: center;
+    line-height: 18px;
+    color: #fff;
+    font-weight: bold;
+    overflow: hidden;
+    margin-bottom: 3px;
+}
+.pagination .active{
+    background: rgb(176, 68, 238);
+    border: 1px solid rgb(10, 1, 15);
+ 
+}
+.pagination .prew-page,.pagination .next-page{
+    text-decoration: none;
+    margin: 0px 5px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid rgb(10, 1, 15);
+    background: rgb(160, 154, 175);
+    text-align: center;
+    line-height: 18px;
+    color: #fff;
+    font-weight: bold;
+    overflow: hidden;
+    margin-bottom: 3px;
+}
+.table_dept .table_department_magacin{
+    width: 95% !important;
+}
+.table_dept .parthID{
+    width: 7%;
+}
+.table_dept .th_line{
+    width: 23% ;
+}
+.table_dept .p_s_no{
+    width: 10%;
+}
+.table_dept .th_model{
+   width: 23%;
+}
+.table_dept .th_opis{
+    width: 23%;
+}
+.table_dept .quantity{
+    width: 7%;
+}
+.table_dept .th_edit{
+    width: 3%;
+}
+
+.table_dept .table_department_magacin{
+    width: 95% !important;
+}
+.table_dept .ime{
+    width: 17%;
+}
+.table_dept .prezime{
+    width: 17% ;
+}
+.table_dept .mail{
+    width: 23%;
+}
+.table_dept .telefon{
+   width: 17%;
+}
+.table_dept .privilegii{
+    width: 17%;
+}
+.table_dept .work_position{
+    width: 17%;
+}
+#login_email{
+    margin-left: 3vw !important;
+}
+.table_department #tbody_users tr:nth-child(even) {background: #CCC;
+text-align: center;}
+.table_department #tbody_users tr td{
+    padding: 3px;
+}
+.table_department #tbody_users tr:nth-child(odd) {background: #FFF;
+text-align: center;}
+
+.orderNo{
+    width: 7%;
+    font-weight: bold;
+    padding: 3px;
+}
+.timeStart{
+    width: 10%;
+    padding: 3px;
+}
+.sAgent{
+    width: 15%;
+    padding: 3px;
+}
+.serviser{
+    width: 15%;
+    padding: 3px;
+}
+.dept{
+    width: 20%;
+    padding: 3px;
+    
+}
+.line{
+    width: 20%;
+    padding: 3px;
+  
+}
+.timeEnd{
+    width: 10%;
+}
+.orderStatus{
+    width: 7%;
+    padding: 3px;
+}
+#tbody_line tr td{
+    padding: 3px 0px !important;
+}
